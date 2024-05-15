@@ -24,7 +24,7 @@ struct ToggleRequest {
     toggle: bool,
 }
 
-#[get("/test")]
+#[get("/v1/stream/test")]
 async fn test() -> impl Responder {
     HttpResponse::Ok().body("Hello, yiannis!")
 }
